@@ -14,5 +14,5 @@ class MenuController: UITableViewController {
     super.viewDidLoad()
 
     performSegueWithIdentifier("loadHome", sender: self)
-}
+  }
 }
