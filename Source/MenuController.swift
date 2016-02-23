@@ -7,12 +7,16 @@
 //
 
 import UIKit
-import Foundation
+
 class MenuController: UITableViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    // When this view loads, immediately perform the segue "loadHome".
+    //
+    // This segue IS NOT animated. It appears to the user as if the view Home is the root view
+    // controller when, in fact, this view (the view Menu) is the root view controller.
     performSegueWithIdentifier("loadHome", sender: self)
   }
 }
