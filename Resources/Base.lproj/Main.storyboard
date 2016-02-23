@@ -23,6 +23,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S85-br-Q9c">
                                         <rect key="frame" x="219.5" y="0.0" width="121.5" height="178.5"/>
+                                        <accessibility key="accessibilityConfiguration" label="homeViewTitle"/>
                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -44,6 +45,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="homeView"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="pAE-N1-ety" secondAttribute="trailing" id="8md-zJ-XG0"/>
                             <constraint firstItem="DUZ-Ay-Q9Q" firstAttribute="top" secondItem="pAE-N1-ety" secondAttribute="bottom" id="H76-kr-C0P"/>
@@ -70,12 +72,14 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="News" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ba-co-6UU">
                                 <rect key="frame" x="244" y="271.5" width="112.5" height="57.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="newsViewTitle"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.80000001190000003" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="newsView"/>
                         <constraints>
                             <constraint firstItem="0ba-co-6UU" firstAttribute="centerX" secondItem="czK-Ie-YI1" secondAttribute="centerX" id="KRo-W6-3Fy"/>
                             <constraint firstItem="0ba-co-6UU" firstAttribute="centerY" secondItem="czK-Ie-YI1" secondAttribute="centerY" id="NvI-t3-SCG"/>
@@ -100,12 +104,14 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQS-nD-lDY">
                                 <rect key="frame" x="221" y="271.5" width="159" height="57.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="contactViewTitle"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="48"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="contactView"/>
                         <constraints>
                             <constraint firstItem="CQS-nD-lDY" firstAttribute="centerX" secondItem="Cmj-dE-cZ0" secondAttribute="centerX" id="B77-sQ-Y6M"/>
                             <constraint firstItem="CQS-nD-lDY" firstAttribute="centerY" secondItem="Cmj-dE-cZ0" secondAttribute="centerY" id="gqg-ya-ZNN"/>
@@ -120,12 +126,12 @@
         <scene sceneID="q2j-MG-JXF">
             <objects>
                 <tableViewController storyboardIdentifier="menu" title="Menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ytg-g2-yUY" userLabel="Menu" customClass="MenuController" customModule="NavigationControllerAsMenu" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="54" sectionHeaderHeight="18" sectionFooterHeight="18" id="3Pw-76-c16">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="54" sectionHeaderHeight="18" sectionFooterHeight="18" id="3Pw-76-c16" userLabel="Menu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                         <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="Vvb-2F-Ygx">
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Vvb-2F-Ygx" userLabel="Header">
                             <rect key="frame" x="0.0" y="64" width="600" height="113"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
@@ -175,6 +181,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="home"/>
                                         <connections>
                                             <segue destination="zZR-dW-949" kind="show" identifier="showHome" id="rSJ-Df-jeW"/>
                                         </connections>
@@ -196,6 +203,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="news"/>
                                         <connections>
                                             <segue destination="U0d-Vq-Md1" kind="show" identifier="showNews" id="pTN-l3-Vux"/>
                                         </connections>
@@ -217,6 +225,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="contact"/>
                                         <connections>
                                             <segue destination="Be1-67-KU9" kind="show" identifier="showContact" id="5Ev-dZ-n7E"/>
                                         </connections>
