@@ -9,7 +9,6 @@
 import UIKit
 
 class MenuController: UITableViewController {
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -19,5 +18,9 @@ class MenuController: UITableViewController {
     // controller when, in fact, this view (the view Menu) is the root view controller.
     performSegueWithIdentifier("loadHome", sender: self)
   }
+
+  //  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+  //    segue.destinationViewController.transitioningDelegate = self
+  //    segue.destinationViewController.modalPresentationStyle = .Custom
+  //  }
 }
- 
